@@ -4,7 +4,7 @@ Symfony Demo Application
 Usage
 -----
 
-Generate Dockerfile and docker-compose.yml and add them to the directory containing the app code. 
+Generate `Dockerfile` and `docker-compose.yml` and add them to the directory containing the app code. 
 
 Run `docker-compose up` to prepare the environment.
 
