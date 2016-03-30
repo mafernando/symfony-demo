@@ -14,7 +14,7 @@ Then execute the following to prepare the MySQL database.
 
 ```bash
 rm -rf app/cache/
-composer_install
+composer install
 chown -R www-data:www-data /app 
 php app/console doctrine:schema:create
 php app/console doctrine:schema:update --force
