@@ -1,0 +1,21 @@
+---
+version: '2'
+services:
+  common:
+    build: "."
+    environment:
+      DATABASE_URL: mysql://root:-35bsacVSwaVSyaqk4nd8Q@db:3306/app
+  app:
+    extends:
+      service: common
+    links:
+    - db
+    ports:
+    - 80:80
+    command: "/usr/sbin/apache2ctl -D FOREGROUND"
+  db:
+    image: mysql
+    environment:
+      MYSQL_DATABASE: app
+      MYSQL_ROOT_PASSWORD: "-35bsacVSwaVSyaqk4nd8Q"
+
