@@ -4,7 +4,7 @@ services:
   common:
     build: "."
     environment:
-      DATABASE_URL: mysql://root:-35bsacVSwaVSyaqk4nd8Q@db:3306/app
+      DATABASE_URL: mysql://root:aenne359lrtYBAJIR6_SVQ@db:3306/app
   app:
     extends:
       service: common
@@ -17,5 +17,5 @@ services:
     image: mysql
     environment:
       MYSQL_DATABASE: app
-      MYSQL_ROOT_PASSWORD: "-35bsacVSwaVSyaqk4nd8Q"
+      MYSQL_ROOT_PASSWORD: aenne359lrtYBAJIR6_SVQ
 
