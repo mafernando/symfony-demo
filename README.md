@@ -18,7 +18,6 @@ composer install
 chown -R www-data:www-data /app 
 php app/console doctrine:schema:create
 php app/console doctrine:schema:update --force
-php app/console doctrine:database:create
 php app/console doctrine:fixtures:load
 ```
 
